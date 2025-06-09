@@ -1,138 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>MarioBootstrapGram</title>
 </head>
-    <body>
-        <div class="container-fluid">
 
-            <!-- Nav -->
+<body>
+    <div class="container-fluid">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="d-flex flex-grow-1 justify-content-between">
-                    <a class="navbar-brand" href="#">
-                        <i class="fa-brands fa-instagram"></i><strong>&nbsp;Instagram</strong>
-                    </a>
+        <!-- Nav -->
 
-                    <div class="d-flex">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="d-flex flex-grow-1 justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-instagram"></i><strong>&nbsp;Instagram</strong>
+                </a>
 
-                        <!-- Modal -->
+                <div class="d-flex">
 
-                        <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Create a new post
-                        </button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <!-- Modal -->
+
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="text-black">Caption:</p>
-                                <textarea class="form-control mb-3" aria-label="With textarea" placeholder="Add the caption of your post here"></textarea>
-                                <div>
-                                    <button type="button" class="btn btn-outline-secondary text-black"><i class="fa-solid fa-camera"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary text-black"><i class="fa-solid fa-location-dot "></i></button>
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-black">Caption:</p>
+                                    <textarea class="form-control mb-3" aria-label="With textarea"
+                                        placeholder="Add the caption of your post here"></textarea>
+                                    <div>
+                                        <button type="button" class="btn btn-outline-secondary text-black"><i
+                                                class="fa-solid fa-camera"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary text-black"><i
+                                                class="fa-solid fa-location-dot "></i></button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-success">Publish</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <!-- Dropdown -->
-                        
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-gear"></i>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                            </ul>
                         </div>
                     </div>
+
+                    <!-- Dropdown -->
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </nav>
-            
-            <!-- Botones grid -->
-    
-            <div class="d-flex flex-grow-1 justify-content-center">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active botonGrid" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link botonGrid" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="bi bi-square-fill"></i></button>
-                    </li>
-                </ul>
             </div>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+        </nav>
 
-                    <!-- Boton grid 3 por fila -->
 
-                    <div class="container text-center">
-                        <div class="row mb-2">
-                            <div class="col mx-1">
-                                <img class="imagenGridTres" src="https://blog.checkmybus.es/wp-content/uploads/2020/06/playa-atardecer-espa%C3%B1a.jpg">
-                            </div>
-                            <div class="col mx-1">
-                                <img class="imagenGridTres" src="https://comeamaviaja.com/wp-content/uploads/2023/11/hawaii-playas.webp">
-                            </div>
-                            <div class="col mx-1">
-                                <img class="imagenGridTres" src="https://images.ecestaticos.com/lI2lCkTotoVmtfPhC30e95P6lv0=/0x0:1112x834/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb9a%2F0a6%2F0a5%2Fb9a0a60a5a6741fe5b9fef2c31c07a89.jpg">
-                            </div>
+
+        <!-- <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Offcanvas navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav> -->
+
+
+
+
+
+        <!-- Botones grid -->
+
+        <div class="d-flex flex-grow-1 justify-content-center align-items-center">
+            <ul class="nav nav-pills my-2" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active botonGrid" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link botonGrid" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false"><i class="bi bi-square-fill"></i></button>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+
+                <!-- Boton grid 3 por fila -->
+
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm mx-1 ratio ratio-1x1">
+                            <img src="https://blog.checkmybus.es/wp-content/uploads/2020/06/playa-atardecer-espa%C3%B1a.jpg"
+                                class="object-fit-cover">
                         </div>
-
-                        <div class="row mb-2">
-                            <div class="col">
-                                <img class="imagenGridTres" src="https://content-viajes.nationalgeographic.com.es/medio/2013/07/19/es08463_1334x2000.jpg">
-                            </div>
-                            <div class="col">
-                                <img class="imagenGridTres" src="https://safariafricano.es/wp-content/uploads/sites/8/2023/07/zanzibar_beach.jpg">
-                            </div>
-                            <div class="col">
-                                <img class="imagenGridTres" src="https://media.traveler.es/photos/64620c407fa97b050202d626/3:2/w_3963,h_2642,c_limit/2BGG2NK%20(1).jpg">
-                            </div>
+                        <div class="col-sm mx-1 ratio ratio-1x1">
+                            <img src="https://comeamaviaja.com/wp-content/uploads/2023/11/hawaii-playas.webp"
+                                class="object-fit-cover">
                         </div>
+                        <div class="col-sm mx-1 ratio ratio-1x1">
+                            <img src="https://images.ecestaticos.com/lI2lCkTotoVmtfPhC30e95P6lv0=/0x0:1112x834/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb9a%2F0a6%2F0a5%2Fb9a0a60a5a6741fe5b9fef2c31c07a89.jpg"
+                                class="object-fit-cover">
+                        </div>
+                    </div>
 
-                        <div class="row mb-2">
-                            <div class="col">
-                                <img class="imagenGridTres" src="https://res.cloudinary.com/lastminute-contenthub/s--J8faDetp--/c_crop,h_3200,w_5760,x_0,y_640/c_limit,h_999999,w_1920/f_auto/q_auto:eco/v1/DAM/Photos/Destinations/Europe/Spain/Fuerteventura/shutterstock_374114212">
-                            </div>
-                            <div class="col">
-                                <img class="imagenGridTres" src="https://hips.hearstapps.com/hmg-prod/images/mejores-playas-espana-2024-elle-1-66c08203c7226.jpg?crop=0.672xw:1.00xh;0.0246xw,0&resize=1200:*">
-                            </div>
-                            <div class="col">
-                                <img class="imagenGridTres" src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2024/11/playas-del-mar-rojo-7.jpg">
-                            </div>
+                    <div class="row mb-2">
+                        <div class="col-sm mx-1 ratio ratio-1x1">
+                            <img src="https://content-viajes.nationalgeographic.com.es/medio/2013/07/19/es08463_1334x2000.jpg"
+                                class="object-fit-cover">
+                        </div>
+                        <div class="col-sm mx-1 ratio ratio-1x1">
+                            <img src="https://safariafricano.es/wp-content/uploads/sites/8/2023/07/zanzibar_beach.jpg"
+                                class="object-fit-cover">
+                        </div>
+                        <div class="col-sm mx-1 ratio ratio-1x1">
+                            <img src="https://media.traveler.es/photos/64620c407fa97b050202d626/3:2/w_3963,h_2642,c_limit/2BGG2NK%20(1).jpg"
+                                class="object-fit-cover">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-sm mx-1 ratio ratio-1x1">
+                            <img src="https://res.cloudinary.com/lastminute-contenthub/s--J8faDetp--/c_crop,h_3200,w_5760,x_0,y_640/c_limit,h_999999,w_1920/f_auto/q_auto:eco/v1/DAM/Photos/Destinations/Europe/Spain/Fuerteventura/shutterstock_374114212"
+                                class="object-fit-cover">
+                        </div>
+                        <div class="col-sm mx-1 ratio ratio-1x1">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/mejores-playas-espana-2024-elle-1-66c08203c7226.jpg?crop=0.672xw:1.00xh;0.0246xw,0&resize=1200:*"
+                                class="object-fit-cover">
+                        </div>
+                        <div class="col-sm mx-1 ratio ratio-1x1">
+                            <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2024/11/playas-del-mar-rojo-7.jpg"
+                                class="object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+
+                <!-- Boton Grid 1 por fila -->
+
+                <div class="row justify-content-center ">
+                    <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
+                        <div class="d-flex justify-content-between d-flex align-items-center m-2">
+                            <h5>Las playas de El Caribe</h5>
+                            <p>02/07</p>
+                        </div>
+                        <img src="https://blog.checkmybus.es/wp-content/uploads/2020/06/playa-atardecer-espa%C3%B1a.jpg"
+                            class="w-100 object-fit-cover">
+                        <div class="d-flex flex-column m-2">
+                            <h6 class="mb-0 ">777 likes</h6>
+                            <p class="m-0">Estas playas son impresionantes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
+                        <div class="d-flex justify-content-between d-flex align-items-center m-2">
+                            <h5>Playa de málaga</h5>
+                            <p>06/08</p>
+                        </div>
+                        <img src="https://images.ecestaticos.com/lI2lCkTotoVmtfPhC30e95P6lv0=/0x0:1112x834/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb9a%2F0a6%2F0a5%2Fb9a0a60a5a6741fe5b9fef2c31c07a89.jpg"
+                            class="w-100 object-fit-cover">
+                        <div class="d-flex flex-column m-2">
+                            <h6 class="mb-0 ">1000 likes</h6>
+                            <p class="m-0">Estas playas son muy conocidas en todo el mundo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
+                        <div class="d-flex justify-content-between d-flex align-items-center m-2">
+                            <h5>Playa de Madagascar</h5>
+                            <p>25/10</p>
+                        </div>
+                        <img src="https://safariafricano.es/wp-content/uploads/sites/8/2023/07/zanzibar_beach.jpg"
+                            class="w-100 object-fit-cover">
+                        <div class="d-flex flex-column m-2">
+                            <h6 class="mb-0 ">999.999 likes</h6>
+                            <p class="m-0">El lugar perfecto para una luna de miel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
+                        <div class="d-flex justify-content-between d-flex align-items-center m-2">
+                            <h5>Playa de Bali</h5>
+                            <p>10/12</p>
+                        </div>
+                        <img src="https://res.cloudinary.com/lastminute-contenthub/s--J8faDetp--/c_crop,h_3200,w_5760,x_0,y_640/c_limit,h_999999,w_1920/f_auto/q_auto:eco/v1/DAM/Photos/Destinations/Europe/Spain/Fuerteventura/shutterstock_374114212"
+                            class="w-100 object-fit-cover">
+                        <div class="d-flex flex-column m-2">
+                            <h6 class="mb-0 "> 1 like</h6>
+                            <p class="m-0">Este es tu sitio si no tienes un presupuesto demasiado grande</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
+                        <div class="d-flex justify-content-between d-flex align-items-center m-2">
+                            <h5>Playa La Concha de Las Islas Canarias</h5>
+                            <p>21/12</p>
+                        </div>
+                        <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2024/11/playas-del-mar-rojo-7.jpg"
+                            class="w-100 object-fit-cover">
+                        <div class="d-flex flex-column m-2">
+                            <h6 class="mb-0 "> 200 likes</h6>
+                            <p class="m-0">Esta es una experiencia recomendable para hacer una vez en la vida como
+                                mínimo, pero este lugar no es barato</p>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            </div>
+        </div>
 
-                    <!-- Boton Grid 1 por fila -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
 
-                    Adios
-                </div>
-            </div>    
-            
-        </div>    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>    </body>
 </html>
