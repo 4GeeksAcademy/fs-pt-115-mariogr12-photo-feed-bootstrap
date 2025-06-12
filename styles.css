@@ -1,8 +1,0 @@
-.nav-pills .nav-item .nav-link.botonGrid {
-    background-color: transparent !important;
-    color: black !important;
-}
-.nav-pills .nav-link.botonGrid.active {
-    color: #0d6efd !important; /* Azul Bootstrap */
-}
-

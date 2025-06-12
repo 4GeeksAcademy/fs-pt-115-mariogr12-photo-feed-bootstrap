@@ -15,254 +15,237 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0">
 
-        <!-- Nav -->
+    <!-- Nav -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mx-2">
-            <div class="d-flex flex-grow-1 justify-content-between flex-wrap">
-                <a class="navbar-brand" href="#">
-                    <i class="fa-brands fa-instagram"></i><strong>&nbsp;Instagram</strong>
-                </a>
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram"></i><strong>&nbsp;Instagram</strong>
+            </a>
+            <div class="d-flex gap-2 ms-auto">
 
-                <div class="d-flex flex-wrap">
+                <!-- Modal -->
 
-                    <!-- Modal -->
-
-                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Create a new post
-                    </button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-black">Caption:</p>
+                                <textarea class="form-control mb-3" aria-label="With textarea"
+                                    placeholder="Add the caption of your post here"></textarea>
+                                <div>
+                                    <button type="button" class="btn btn-outline-secondary text-black"><i
+                                            class="fa-solid fa-camera"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary text-black"><i
+                                            class="fa-solid fa-location-dot "></i></button>
                                 </div>
-                                <div class="modal-body">
-                                    <p class="text-black">Caption:</p>
-                                    <textarea class="form-control mb-3" aria-label="With textarea"
-                                        placeholder="Add the caption of your post here"></textarea>
-                                    <div>
-                                        <button type="button" class="btn btn-outline-secondary text-black"><i
-                                                class="fa-solid fa-camera"></i></button>
-                                        <button type="button" class="btn btn-outline-secondary text-black"><i
-                                                class="fa-solid fa-location-dot "></i></button>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-success">Publish</button>
-                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Dropdown -->
+                <!-- Dropdown -->
 
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="fa-solid fa-gear"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                        </ul>
-                    </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
-
-
-        <!-- Botones grid -->
-
-        <div class="d-flex flex-grow-1 justify-content-center align-items-center">
-            <ul class="nav nav-pills my-2" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active botonGrid" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link botonGrid" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false"><i class="bi bi-square-fill"></i></button>
-                </li>
-            </ul>
-        </div>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                tabindex="0">
-
-                <!-- Boton grid 3 por fila -->
-                <div class="d-flex justify-content-center">
-                    <div class="container-fluid p-0 m-0">
-
-                        <div class="row mx-2 mb-2">
-                            <div class="col-sm-4 p-0">
-                                <div class="ratio ratio-1x1">
-                                    <img src="https://blog.checkmybus.es/wp-content/uploads/2020/06/playa-atardecer-espa%C3%B1a.jpg"
-                                        class="img-fluid object-fit-cover">
-                                </div>
-                            </div>
-                            <div class="col-sm-4 p-0">
-                                <div class="ratio ratio-1x1">
-                                    <img src="https://comeamaviaja.com/wp-content/uploads/2023/11/hawaii-playas.webp"
-                                        class="img-fluid object-fit-cover">
-                                </div>
-                            </div>
-                            <div class="col-sm-4 p-0">
-                                <div class="ratio ratio-1x1">
-                                    <img src="https://images.ecestaticos.com/lI2lCkTotoVmtfPhC30e95P6lv0=/0x0:1112x834/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb9a%2F0a6%2F0a5%2Fb9a0a60a5a6741fe5b9fef2c31c07a89.jpg"
-                                        class="img-fluid object-fit-cover">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mx-2 mb-2">
-                            <div class="col-sm-4 p-0">
-                                <div class="ratio ratio-1x1">
-                                    <img src="https://content-viajes.nationalgeographic.com.es/medio/2013/07/19/es08463_1334x2000.jpg"
-                                        class="img-fluid object-fit-cover">
-                                </div>
-                            </div>
-                            <div class="col-sm-4 p-0">
-                                <div class="ratio ratio-1x1">
-                                    <img src="https://safariafricano.es/wp-content/uploads/sites/8/2023/07/zanzibar_beach.jpg"
-                                        class="img-fluid object-fit-cover">
-                                </div>
-                            </div>
-                            <div class="col-sm-4 p-0">
-                                <div class="ratio ratio-1x1">
-                                    <img src="https://media.traveler.es/photos/64620c407fa97b050202d626/3:2/w_3963,h_2642,c_limit/2BGG2NK%20(1).jpg"
-                                        class="img-fluid object-fit-cover">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mx-2 mb-2">
-                            <div class="col-sm-4 p-0">
-                                <div class="ratio ratio-1x1">
-                                    <img src="https://res.cloudinary.com/lastminute-contenthub/s--J8faDetp--/c_crop,h_3200,w_5760,x_0,y_640/c_limit,h_999999,w_1920/f_auto/q_auto:eco/v1/DAM/Photos/Destinations/Europe/Spain/Fuerteventura/shutterstock_374114212"
-                                        class="img-fluid object-fit-cover">
-                                </div>
-                            </div>
-                            <div class="col-sm-4 p-0">
-                                <div class="ratio ratio-1x1">
-                                    <img src="https://hips.hearstapps.com/hmg-prod/images/mejores-playas-espana-2024-elle-1-66c08203c7226.jpg?crop=0.672xw:1.00xh;0.0246xw,0&resize=1200:*"
-                                        class="img-fluid object-fit-cover">
-                                </div>
-                            </div>
-                            <div class="col-sm-4 p-0">
-                                <div class="ratio ratio-1x1">
-                                    <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2024/11/playas-del-mar-rojo-7.jpg"
-                                        class="img-fluid object-fit-cover">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                tabindex="0">
-
-                <!-- Boton Grid 1 por fila -->
-
-                <div class="d-flex justify-content-center">
-                    <div class="container-fluid">
-                        <div class="row justify-content-center ">
-                            <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
-                                <div class="d-flex justify-content-between align-items-center flex-wrap m-2">
-                                    <h5>Las playas de El Caribe</h5>
-                                    <p>02/07</p>
-                                </div>
-                                <img src="https://blog.checkmybus.es/wp-content/uploads/2020/06/playa-atardecer-espa%C3%B1a.jpg"
-                                    class="w-100 object-fit-cover">
-                                <div class="d-flex flex-column m-2">
-                                    <h6 class="mb-0">777 likes</h6>
-                                    <p class="m-0">Estas playas son impresionantes</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
-                                <div class="d-flex justify-content-between align-items-center flex-wrap m-2">
-                                    <h5>Playa de málaga</h5>
-                                    <p>06/08</p>
-                                </div>
-                                <img src="https://images.ecestaticos.com/lI2lCkTotoVmtfPhC30e95P6lv0=/0x0:1112x834/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb9a%2F0a6%2F0a5%2Fb9a0a60a5a6741fe5b9fef2c31c07a89.jpg"
-                                    class="w-100 object-fit-cover">
-                                <div class="d-flex flex-column m-2">
-                                    <h6 class="mb-0 ">1000 likes</h6>
-                                    <p class="m-0">Estas playas son muy conocidas en todo el mundo</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
-                                <div class="d-flex justify-content-between align-items-center flex-wrap m-2">
-                                    <h5>Playa de Madagascar</h5>
-                                    <p>25/10</p>
-                                </div>
-                                <img src="https://safariafricano.es/wp-content/uploads/sites/8/2023/07/zanzibar_beach.jpg"
-                                    class="w-100 object-fit-cover">
-                                <div class="d-flex flex-column m-2">
-                                    <h6 class="mb-0 ">999.999 likes</h6>
-                                    <p class="m-0">El lugar perfecto para una luna de miel</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
-                                <div class="d-flex justify-content-between align-items-center flex-wrap m-2">
-                                    <h5>Playa de Bali</h5>
-                                    <p>10/12</p>
-                                </div>
-                                <img src="https://res.cloudinary.com/lastminute-contenthub/s--J8faDetp--/c_crop,h_3200,w_5760,x_0,y_640/c_limit,h_999999,w_1920/f_auto/q_auto:eco/v1/DAM/Photos/Destinations/Europe/Spain/Fuerteventura/shutterstock_374114212"
-                                    class="w-100 object-fit-cover">
-                                <div class="d-flex flex-column m-2">
-                                    <h6 class="mb-0 "> 1 like</h6>
-                                    <p class="m-0">Este es tu sitio si no tienes un presupuesto demasiado grande</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
-                                <div class="d-flex justify-content-between align-items-center flex-wrap m-2">
-                                    <h5>Playa La Concha de Las Islas Canarias</h5>
-                                    <p>21/12</p>
-                                </div>
-                                <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2024/11/playas-del-mar-rojo-7.jpg"
-                                    class="w-100 object-fit-cover">
-                                <div class="d-flex flex-column m-2">
-                                    <h6 class="mb-0 "> 200 likes</h6>
-                                    <p class="m-0">Esta es una experiencia recomendable para hacer una vez en la vida
-                                        como
-                                        mínimo, pero este lugar no es barato</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
     </div>
+
+
+    <!-- Botones grid -->
+
+    <ul class="nav nav-tabs d-flex justify-content-center border-0" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active botonGrid border-0" id="pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                    class="bi bi-grid-3x3"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link botonGrid border-0" id="pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                aria-selected="false"><i class="bi bi-square-fill"></i></button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+
+            <!-- Boton grid 3 por fila -->
+
+            <div class="row mx-2 mb-2">
+                <div class="col-lg-4 col-md-6 p-1">
+                    <div class="ratio ratio-1x1">
+                        <img src="https://blog.checkmybus.es/wp-content/uploads/2020/06/playa-atardecer-espa%C3%B1a.jpg"
+                            class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1">
+                    <div class="ratio ratio-1x1">
+                        <img src="https://comeamaviaja.com/wp-content/uploads/2023/11/hawaii-playas.webp"
+                            class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1">
+                    <div class="ratio ratio-1x1">
+                        <img src="https://images.ecestaticos.com/lI2lCkTotoVmtfPhC30e95P6lv0=/0x0:1112x834/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb9a%2F0a6%2F0a5%2Fb9a0a60a5a6741fe5b9fef2c31c07a89.jpg"
+                            class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1">
+                    <div class="ratio ratio-1x1">
+                        <img src="https://content-viajes.nationalgeographic.com.es/medio/2013/07/19/es08463_1334x2000.jpg"
+                            class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1">
+                    <div class="ratio ratio-1x1">
+                        <img src="https://safariafricano.es/wp-content/uploads/sites/8/2023/07/zanzibar_beach.jpg"
+                            class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1">
+                    <div class="ratio ratio-1x1">
+                        <img src="https://media.traveler.es/photos/64620c407fa97b050202d626/3:2/w_3963,h_2642,c_limit/2BGG2NK%20(1).jpg"
+                            class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1">
+                    <div class="ratio ratio-1x1">
+                        <img src="https://res.cloudinary.com/lastminute-contenthub/s--J8faDetp--/c_crop,h_3200,w_5760,x_0,y_640/c_limit,h_999999,w_1920/f_auto/q_auto:eco/v1/DAM/Photos/Destinations/Europe/Spain/Fuerteventura/shutterstock_374114212"
+                            class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1">
+                    <div class="ratio ratio-1x1">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/mejores-playas-espana-2024-elle-1-66c08203c7226.jpg?crop=0.672xw:1.00xh;0.0246xw,0&resize=1200:*"
+                            class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-1">
+                    <div class="ratio ratio-1x1">
+                        <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2024/11/playas-del-mar-rojo-7.jpg"
+                            class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+            <!-- Boton Grid 1 por fila -->
+
+            <div class="d-flex justify-content-center">
+                <div class="container-fluid">
+                    <div class="row justify-content-center ">
+                        <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap m-2">
+                                <h5>Las playas de El Caribe</h5>
+                                <p>02/07</p>
+                            </div>
+                            <img src="https://blog.checkmybus.es/wp-content/uploads/2020/06/playa-atardecer-espa%C3%B1a.jpg"
+                                class="w-100 object-fit-cover">
+                            <div class="d-flex flex-column m-2">
+                                <h6 class="mb-0">777 likes</h6>
+                                <p class="m-0">Estas playas son impresionantes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap m-2">
+                                <h5>Playa de málaga</h5>
+                                <p>06/08</p>
+                            </div>
+                            <img src="https://images.ecestaticos.com/lI2lCkTotoVmtfPhC30e95P6lv0=/0x0:1112x834/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb9a%2F0a6%2F0a5%2Fb9a0a60a5a6741fe5b9fef2c31c07a89.jpg"
+                                class="w-100 object-fit-cover">
+                            <div class="d-flex flex-column m-2">
+                                <h6 class="mb-0 ">1000 likes</h6>
+                                <p class="m-0">Estas playas son muy conocidas en todo el mundo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap m-2">
+                                <h5>Playa de Madagascar</h5>
+                                <p>25/10</p>
+                            </div>
+                            <img src="https://safariafricano.es/wp-content/uploads/sites/8/2023/07/zanzibar_beach.jpg"
+                                class="w-100 object-fit-cover">
+                            <div class="d-flex flex-column m-2">
+                                <h6 class="mb-0 ">999.999 likes</h6>
+                                <p class="m-0">El lugar perfecto para una luna de miel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap m-2">
+                                <h5>Playa de Bali</h5>
+                                <p>10/12</p>
+                            </div>
+                            <img src="https://res.cloudinary.com/lastminute-contenthub/s--J8faDetp--/c_crop,h_3200,w_5760,x_0,y_640/c_limit,h_999999,w_1920/f_auto/q_auto:eco/v1/DAM/Photos/Destinations/Europe/Spain/Fuerteventura/shutterstock_374114212"
+                                class="w-100 object-fit-cover">
+                            <div class="d-flex flex-column m-2">
+                                <h6 class="mb-0 "> 1 like</h6>
+                                <p class="m-0">Este es tu sitio si no tienes un presupuesto demasiado grande</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 border border-light-subtle bg-light p-0 mb-4">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap m-2">
+                                <h5>Playa La Concha de Las Islas Canarias</h5>
+                                <p>21/12</p>
+                            </div>
+                            <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2024/11/playas-del-mar-rojo-7.jpg"
+                                class="w-100 object-fit-cover">
+                            <div class="d-flex flex-column m-2">
+                                <h6 class="mb-0 "> 200 likes</h6>
+                                <p class="m-0">Esta es una experiencia recomendable para hacer una vez en la vida
+                                    como
+                                    mínimo, pero este lugar no es barato</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
